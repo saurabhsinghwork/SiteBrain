@@ -1,0 +1,26 @@
+[project]
+name = "website-ai-assistant"
+version = "0.1.0"
+description = "LangGraph website AI assistant with ZIP-based RAG knowledge ingestion."
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    "langgraph",
+    "langchain-core",
+    "streamlit",
+    "google-genai",
+    "sentence-transformers",
+    "chromadb",
+    "python-dotenv",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "ruff",
+]
+
+[tool.ruff]
+line-length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,14 @@
+services:
+  assistant:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    env_file:
+      - .env
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./rag/uploads:/app/rag/uploads
+      - ./rag/extracted:/app/rag/extracted
+      - ./rag/vector_store:/app/rag/vector_store
+      - ./rag/reports:/app/rag/reports

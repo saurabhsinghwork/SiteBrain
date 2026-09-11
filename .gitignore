@@ -1,0 +1,52 @@
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.python-version
+.venv/
+venv/
+env/
+
+# Test / quality caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Uploaded website repositories
+rag/uploads/*.zip
+!rag/uploads/README.md
+
+# Extracted website source
+rag/extracted/*
+!rag/extracted/.gitkeep
+
+# Generated vector database data
+rag/vector_store/*
+!rag/vector_store/.gitkeep
+
+# Generated scan/index reports
+rag/reports/*
+!rag/reports/.gitkeep
+
+# Temporary files
+.tmp/
+tmp/
